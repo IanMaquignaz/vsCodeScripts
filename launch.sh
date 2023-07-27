@@ -93,7 +93,7 @@ wget --no-verbose -NS --content-disposition $URL_VSCODE_CLI -P $HOME
 if [ -f "$FP_VSCODE_CLI" ]; then
     	echo "Extracting..."
         # Extract
-        tar -xvf $FP_VSCODE_CLI
+        tar -xvf $FP_VSCODE_CLI --directory $HOME
 else
 	echo "Failed to download File. Skipping extraction."
 fi
